@@ -1,0 +1,2586 @@
+"https://ytdlp.online/stream?command=yt-dlp%20--help" 
+
+data: <font color="red">Running command: --help -o 'download/%(title)s.%(ext)s'</font>
+
+data: Usage: yt-dlp [OPTIONS] URL [URL...]
+
+
+data: 
+
+
+data: Options:
+
+
+data: 
+
+
+data:   General Options:
+
+
+data:     -h, --help                      Print this help text and exit
+
+
+data:     --version                       Print program version and exit
+
+
+data:     -U, --update                    Check if updates are available. You
+
+
+data:                                     installed yt-dlp with pip or using the wheel
+
+
+data:                                     from PyPi; Use that to update
+
+
+data:     --no-update                     Do not check for updates (default)
+
+
+data:     --update-to [CHANNEL]@[TAG]     Upgrade/downgrade to a specific version.
+
+
+data:                                     CHANNEL can be a repository as well. CHANNEL
+
+
+data:                                     and TAG default to "stable" and "latest"
+
+
+data:                                     respectively if omitted; See "UPDATE" for
+
+
+data:                                     details. Supported channels: stable,
+
+
+data:                                     nightly, master
+
+
+data:     -i, --ignore-errors             Ignore download and postprocessing errors.
+
+
+data:                                     The download will be considered successful
+
+
+data:                                     even if the postprocessing fails
+
+
+data:     --no-abort-on-error             Continue with next video on download errors;
+
+
+data:                                     e.g. to skip unavailable videos in a
+
+
+data:                                     playlist (default)
+
+
+data:     --abort-on-error                Abort downloading of further videos if an
+
+
+data:                                     error occurs (Alias: --no-ignore-errors)
+
+
+data:     --list-extractors               List all supported extractors and exit
+
+
+data:     --extractor-descriptions        Output descriptions of all supported
+
+
+data:                                     extractors and exit
+
+
+data:     --use-extractors NAMES          Extractor names to use separated by commas.
+
+
+data:                                     You can also use regexes, "all", "default"
+
+
+data:                                     and "end" (end URL matching); e.g. --ies
+
+
+data:                                     "holodex.*,end,youtube". Prefix the name
+
+
+data:                                     with a "-" to exclude it, e.g. --ies
+
+
+data:                                     default,-generic. Use --list-extractors for
+
+
+data:                                     a list of extractor names. (Alias: --ies)
+
+
+data:     --default-search PREFIX         Use this prefix for unqualified URLs. E.g.
+
+
+data:                                     "gvsearch2:python" downloads two videos from
+
+
+data:                                     google videos for the search term "python".
+
+
+data:                                     Use the value "auto" to let yt-dlp guess
+
+
+data:                                     ("auto_warning" to emit a warning when
+
+
+data:                                     guessing). "error" just throws an error. The
+
+
+data:                                     default value "fixup_error" repairs broken
+
+
+data:                                     URLs, but emits an error if this is not
+
+
+data:                                     possible instead of searching
+
+
+data:     --ignore-config                 Don't load any more configuration files
+
+
+data:                                     except those given to --config-locations.
+
+
+data:                                     For backward compatibility, if this option
+
+
+data:                                     is found inside the system configuration
+
+
+data:                                     file, the user configuration is not loaded.
+
+
+data:                                     (Alias: --no-config)
+
+
+data:     --no-config-locations           Do not load any custom configuration files
+
+
+data:                                     (default). When given inside a configuration
+
+
+data:                                     file, ignore all previous --config-locations
+
+
+data:                                     defined in the current file
+
+
+data:     --config-locations PATH         Location of the main configuration file;
+
+
+data:                                     either the path to the config or its
+
+
+data:                                     containing directory ("-" for stdin). Can be
+
+
+data:                                     used multiple times and inside other
+
+
+data:                                     configuration files
+
+
+data:     --plugin-dirs PATH              Path to an additional directory to search
+
+
+data:                                     for plugins. This option can be used
+
+
+data:                                     multiple times to add multiple directories.
+
+
+data:                                     Use "default" to search the default plugin
+
+
+data:                                     directories (default)
+
+
+data:     --no-plugin-dirs                Clear plugin directories to search,
+
+
+data:                                     including defaults and those provided by
+
+
+data:                                     previous --plugin-dirs
+
+
+data:     --flat-playlist                 Do not extract a playlist's URL result
+
+
+data:                                     entries; some entry metadata may be missing
+
+
+data:                                     and downloading may be bypassed
+
+
+data:     --no-flat-playlist              Fully extract the videos of a playlist
+
+
+data:                                     (default)
+
+
+data:     --live-from-start               Download livestreams from the start.
+
+
+data:                                     Currently experimental and only supported
+
+
+data:                                     for YouTube and Twitch
+
+
+data:     --no-live-from-start            Download livestreams from the current time
+
+
+data:                                     (default)
+
+
+data:     --wait-for-video MIN[-MAX]      Wait for scheduled streams to become
+
+
+data:                                     available. Pass the minimum number of
+
+
+data:                                     seconds (or range) to wait between retries
+
+
+data:     --no-wait-for-video             Do not wait for scheduled streams (default)
+
+
+data:     --mark-watched                  Mark videos watched (even with --simulate)
+
+
+data:     --no-mark-watched               Do not mark videos watched (default)
+
+
+data:     --color [STREAM:]POLICY         Whether to emit color codes in output,
+
+
+data:                                     optionally prefixed by the STREAM (stdout or
+
+
+data:                                     stderr) to apply the setting to. Can be one
+
+
+data:                                     of "always", "auto" (default), "never", or
+
+
+data:                                     "no_color" (use non color terminal
+
+
+data:                                     sequences). Use "auto-tty" or "no_color-tty"
+
+
+data:                                     to decide based on terminal support only.
+
+
+data:                                     Can be used multiple times
+
+
+data:     --compat-options OPTS           Options that can help keep compatibility
+
+
+data:                                     with youtube-dl or youtube-dlc
+
+
+data:                                     configurations by reverting some of the
+
+
+data:                                     changes made in yt-dlp. See "Differences in
+
+
+data:                                     default behavior" for details
+
+
+data:     --alias ALIASES OPTIONS         Create aliases for an option string. Unless
+
+
+data:                                     an alias starts with a dash "-", it is
+
+
+data:                                     prefixed with "--". Arguments are parsed
+
+
+data:                                     according to the Python string formatting
+
+
+data:                                     mini-language. E.g. --alias get-audio,-X "-S
+
+
+data:                                     aext:{0},abr -x --audio-format {0}" creates
+
+
+data:                                     options "--get-audio" and "-X" that takes an
+
+
+data:                                     argument (ARG0) and expands to "-S
+
+
+data:                                     aext:ARG0,abr -x --audio-format ARG0". All
+
+
+data:                                     defined aliases are listed in the --help
+
+
+data:                                     output. Alias options can trigger more
+
+
+data:                                     aliases; so be careful to avoid defining
+
+
+data:                                     recursive options. As a safety measure, each
+
+
+data:                                     alias may be triggered a maximum of 100
+
+
+data:                                     times. This option can be used multiple
+
+
+data:                                     times
+
+
+data:     -t, --preset-alias PRESET       Applies a predefined set of options. e.g.
+
+
+data:                                     --preset-alias mp3. The following presets
+
+
+data:                                     are available: mp3, aac, mp4, mkv, sleep.
+
+
+data:                                     See the "Preset Aliases" section at the end
+
+
+data:                                     for more info. This option can be used
+
+
+data:                                     multiple times
+
+
+data: 
+
+
+data:   Network Options:
+
+
+data:     --proxy URL                     Use the specified HTTP/HTTPS/SOCKS proxy. To
+
+
+data:                                     enable SOCKS proxy, specify a proper scheme,
+
+
+data:                                     e.g. socks5://user:pass@127.0.0.1:1080/.
+
+
+data:                                     Pass in an empty string (--proxy "") for
+
+
+data:                                     direct connection
+
+
+data:     --socket-timeout SECONDS        Time to wait before giving up, in seconds
+
+
+data:     --source-address IP             Client-side IP address to bind to
+
+
+data:     --impersonate CLIENT[:OS]       Client to impersonate for requests. E.g.
+
+
+data:                                     chrome, chrome-110, chrome:windows-10. Pass
+
+
+data:                                     --impersonate="" to impersonate any client.
+
+
+data:                                     Note that forcing impersonation for all
+
+
+data:                                     requests may have a detrimental impact on
+
+
+data:                                     download speed and stability
+
+
+data:     --list-impersonate-targets      List available clients to impersonate.
+
+
+data:     -4, --force-ipv4                Make all connections via IPv4
+
+
+data:     -6, --force-ipv6                Make all connections via IPv6
+
+
+data:     --enable-file-urls              Enable file:// URLs. This is disabled by
+
+
+data:                                     default for security reasons.
+
+
+data: 
+
+
+data:   Geo-restriction:
+
+
+data:     --geo-verification-proxy URL    Use this proxy to verify the IP address for
+
+
+data:                                     some geo-restricted sites. The default proxy
+
+
+data:                                     specified by --proxy (or none, if the option
+
+
+data:                                     is not present) is used for the actual
+
+
+data:                                     downloading
+
+
+data:     --xff VALUE                     How to fake X-Forwarded-For HTTP header to
+
+
+data:                                     try bypassing geographic restriction. One of
+
+
+data:                                     "default" (only when known to be useful),
+
+
+data:                                     "never", an IP block in CIDR notation, or a
+
+
+data:                                     two-letter ISO 3166-2 country code
+
+
+data: 
+
+
+data:   Video Selection:
+
+
+data:     -I, --playlist-items ITEM_SPEC  Comma separated playlist_index of the items
+
+
+data:                                     to download. You can specify a range using
+
+
+data:                                     "[START]:[STOP][:STEP]". For backward
+
+
+data:                                     compatibility, START-STOP is also supported.
+
+
+data:                                     Use negative indices to count from the right
+
+
+data:                                     and negative STEP to download in reverse
+
+
+data:                                     order. E.g. "-I 1:3,7,-5::2" used on a
+
+
+data:                                     playlist of size 15 will download the items
+
+
+data:                                     at index 1,2,3,7,11,13,15
+
+
+data:     --min-filesize SIZE             Abort download if filesize is smaller than
+
+
+data:                                     SIZE, e.g. 50k or 44.6M
+
+
+data:     --max-filesize SIZE             Abort download if filesize is larger than
+
+
+data:                                     SIZE, e.g. 50k or 44.6M
+
+
+data:     --date DATE                     Download only videos uploaded on this date.
+
+
+data:                                     The date can be "YYYYMMDD" or in the format 
+
+
+data:                                     [now|today|yesterday][-
+
+
+data:                                     N[day|week|month|year]]. E.g. "--date
+
+
+data:                                     today-2weeks" downloads only videos uploaded
+
+
+data:                                     on the same day two weeks ago
+
+
+data:     --datebefore DATE               Download only videos uploaded on or before
+
+
+data:                                     this date. The date formats accepted are the
+
+
+data:                                     same as --date
+
+
+data:     --dateafter DATE                Download only videos uploaded on or after
+
+
+data:                                     this date. The date formats accepted are the
+
+
+data:                                     same as --date
+
+
+data:     --match-filters FILTER          Generic video filter. Any "OUTPUT TEMPLATE"
+
+
+data:                                     field can be compared with a number or a
+
+
+data:                                     string using the operators defined in
+
+
+data:                                     "Filtering Formats". You can also simply
+
+
+data:                                     specify a field to match if the field is
+
+
+data:                                     present, use "!field" to check if the field
+
+
+data:                                     is not present, and "&" to check multiple
+
+
+data:                                     conditions. Use a "\" to escape "&" or
+
+
+data:                                     quotes if needed. If used multiple times,
+
+
+data:                                     the filter matches if at least one of the
+
+
+data:                                     conditions is met. E.g. --match-filters
+
+
+data:                                     !is_live --match-filters "like_count>?100 &
+
+
+data:                                     description~='(?i)\bcats \& dogs\b'" matches
+
+
+data:                                     only videos that are not live OR those that
+
+
+data:                                     have a like count more than 100 (or the like
+
+
+data:                                     field is not available) and also has a
+
+
+data:                                     description that contains the phrase "cats &
+
+
+data:                                     dogs" (caseless). Use "--match-filters -" to
+
+
+data:                                     interactively ask whether to download each
+
+
+data:                                     video
+
+
+data:     --no-match-filters              Do not use any --match-filters (default)
+
+
+data:     --break-match-filters FILTER    Same as "--match-filters" but stops the
+
+
+data:                                     download process when a video is rejected
+
+
+data:     --no-break-match-filters        Do not use any --break-match-filters
+
+
+data:                                     (default)
+
+
+data:     --no-playlist                   Download only the video, if the URL refers
+
+
+data:                                     to a video and a playlist
+
+
+data:     --yes-playlist                  Download the playlist, if the URL refers to
+
+
+data:                                     a video and a playlist
+
+
+data:     --age-limit YEARS               Download only videos suitable for the given
+
+
+data:                                     age
+
+
+data:     --download-archive FILE         Download only videos not listed in the
+
+
+data:                                     archive file. Record the IDs of all
+
+
+data:                                     downloaded videos in it
+
+
+data:     --no-download-archive           Do not use archive file (default)
+
+
+data:     --max-downloads NUMBER          Abort after downloading NUMBER files
+
+
+data:     --break-on-existing             Stop the download process when encountering
+
+
+data:                                     a file that is in the archive supplied with
+
+
+data:                                     the --download-archive option
+
+
+data:     --no-break-on-existing          Do not stop the download process when
+
+
+data:                                     encountering a file that is in the archive
+
+
+data:                                     (default)
+
+
+data:     --break-per-input               Alters --max-downloads, --break-on-existing,
+
+
+data:                                     --break-match-filters, and autonumber to
+
+
+data:                                     reset per input URL
+
+
+data:     --no-break-per-input            --break-on-existing and similar options
+
+
+data:                                     terminates the entire download queue
+
+
+data:     --skip-playlist-after-errors N  Number of allowed failures until the rest of
+
+
+data:                                     the playlist is skipped
+
+
+data: 
+
+
+data:   Download Options:
+
+
+data:     -N, --concurrent-fragments N    Number of fragments of a dash/hlsnative
+
+
+data:                                     video that should be downloaded concurrently
+
+
+data:                                     (default is 1)
+
+
+data:     -r, --limit-rate RATE           Maximum download rate in bytes per second,
+
+
+data:                                     e.g. 50K or 4.2M
+
+
+data:     --throttled-rate RATE           Minimum download rate in bytes per second
+
+
+data:                                     below which throttling is assumed and the
+
+
+data:                                     video data is re-extracted, e.g. 100K
+
+
+data:     -R, --retries RETRIES           Number of retries (default is 10), or
+
+
+data:                                     "infinite"
+
+
+data:     --file-access-retries RETRIES   Number of times to retry on file access
+
+
+data:                                     error (default is 3), or "infinite"
+
+
+data:     --fragment-retries RETRIES      Number of retries for a fragment (default is
+
+
+data:                                     10), or "infinite" (DASH, hlsnative and ISM)
+
+
+data:     --retry-sleep [TYPE:]EXPR       Time to sleep between retries in seconds
+
+
+data:                                     (optionally) prefixed by the type of retry
+
+
+data:                                     (http (default), fragment, file_access,
+
+
+data:                                     extractor) to apply the sleep to. EXPR can
+
+
+data:                                     be a number, linear=START[:END[:STEP=1]] or
+
+
+data:                                     exp=START[:END[:BASE=2]]. This option can be
+
+
+data:                                     used multiple times to set the sleep for the
+
+
+data:                                     different retry types, e.g. --retry-sleep
+
+
+data:                                     linear=1::2 --retry-sleep fragment:exp=1:20
+
+
+data:     --skip-unavailable-fragments    Skip unavailable fragments for DASH,
+
+
+data:                                     hlsnative and ISM downloads (default)
+
+
+data:                                     (Alias: --no-abort-on-unavailable-fragments)
+
+
+data:     --abort-on-unavailable-fragments
+
+
+data:                                     Abort download if a fragment is unavailable
+
+
+data:                                     (Alias: --no-skip-unavailable-fragments)
+
+
+data:     --keep-fragments                Keep downloaded fragments on disk after
+
+
+data:                                     downloading is finished
+
+
+data:     --no-keep-fragments             Delete downloaded fragments after
+
+
+data:                                     downloading is finished (default)
+
+
+data:     --buffer-size SIZE              Size of download buffer, e.g. 1024 or 16K
+
+
+data:                                     (default is 1024)
+
+
+data:     --resize-buffer                 The buffer size is automatically resized
+
+
+data:                                     from an initial value of --buffer-size
+
+
+data:                                     (default)
+
+
+data:     --no-resize-buffer              Do not automatically adjust the buffer size
+
+
+data:     --http-chunk-size SIZE          Size of a chunk for chunk-based HTTP
+
+
+data:                                     downloading, e.g. 10485760 or 10M (default
+
+
+data:                                     is disabled). May be useful for bypassing
+
+
+data:                                     bandwidth throttling imposed by a webserver
+
+
+data:                                     (experimental)
+
+
+data:     --playlist-random               Download playlist videos in random order
+
+
+data:     --lazy-playlist                 Process entries in the playlist as they are
+
+
+data:                                     received. This disables n_entries,
+
+
+data:                                     --playlist-random and --playlist-reverse
+
+
+data:     --no-lazy-playlist              Process videos in the playlist only after
+
+
+data:                                     the entire playlist is parsed (default)
+
+
+data:     --hls-use-mpegts                Use the mpegts container for HLS videos;
+
+
+data:                                     allowing some players to play the video
+
+
+data:                                     while downloading, and reducing the chance
+
+
+data:                                     of file corruption if download is
+
+
+data:                                     interrupted. This is enabled by default for
+
+
+data:                                     live streams
+
+
+data:     --no-hls-use-mpegts             Do not use the mpegts container for HLS
+
+
+data:                                     videos. This is default when not downloading
+
+
+data:                                     live streams
+
+
+data:     --download-sections REGEX       Download only chapters that match the
+
+
+data:                                     regular expression. A "*" prefix denotes
+
+
+data:                                     time-range instead of chapter. Negative
+
+
+data:                                     timestamps are calculated from the end.
+
+
+data:                                     "*from-url" can be used to download between
+
+
+data:                                     the "start_time" and "end_time" extracted
+
+
+data:                                     from the URL. Needs ffmpeg. This option can
+
+
+data:                                     be used multiple times to download multiple
+
+
+data:                                     sections, e.g. --download-sections
+
+
+data:                                     "*10:15-inf" --download-sections "intro"
+
+
+data:     --downloader [PROTO:]NAME       Name or path of the external downloader to
+
+
+data:                                     use (optionally) prefixed by the protocols
+
+
+data:                                     (http, ftp, m3u8, dash, rstp, rtmp, mms) to
+
+
+data:                                     use it for. Currently supports native,
+
+
+data:                                     aria2c, axel, curl, ffmpeg, httpie, wget.
+
+
+data:                                     You can use this option multiple times to
+
+
+data:                                     set different downloaders for different
+
+
+data:                                     protocols. E.g. --downloader aria2c
+
+
+data:                                     --downloader "dash,m3u8:native" will use
+
+
+data:                                     aria2c for http/ftp downloads, and the
+
+
+data:                                     native downloader for dash/m3u8 downloads
+
+
+data:                                     (Alias: --external-downloader)
+
+
+data:     --downloader-args NAME:ARGS     Give these arguments to the external
+
+
+data:                                     downloader. Specify the downloader name and
+
+
+data:                                     the arguments separated by a colon ":". For
+
+
+data:                                     ffmpeg, arguments can be passed to different
+
+
+data:                                     positions using the same syntax as
+
+
+data:                                     --postprocessor-args. You can use this
+
+
+data:                                     option multiple times to give different
+
+
+data:                                     arguments to different downloaders (Alias:
+
+
+data:                                     --external-downloader-args)
+
+
+data: 
+
+
+data:   Filesystem Options:
+
+
+data:     -a, --batch-file FILE           File containing URLs to download ("-" for
+
+
+data:                                     stdin), one URL per line. Lines starting
+
+
+data:                                     with "#", ";" or "]" are considered as
+
+
+data:                                     comments and ignored
+
+
+data:     --no-batch-file                 Do not read URLs from batch file (default)
+
+
+data:     -P, --paths [TYPES:]PATH        The paths where the files should be
+
+
+data:                                     downloaded. Specify the type of file and the
+
+
+data:                                     path separated by a colon ":". All the same
+
+
+data:                                     TYPES as --output are supported.
+
+
+data:                                     Additionally, you can also provide "home"
+
+
+data:                                     (default) and "temp" paths. All intermediary
+
+
+data:                                     files are first downloaded to the temp path
+
+
+data:                                     and then the final files are moved over to
+
+
+data:                                     the home path after download is finished.
+
+
+data:                                     This option is ignored if --output is an
+
+
+data:                                     absolute path
+
+
+data:     -o, --output [TYPES:]TEMPLATE   Output filename template; see "OUTPUT
+
+
+data:                                     TEMPLATE" for details
+
+
+data:     --output-na-placeholder TEXT    Placeholder for unavailable fields in
+
+
+data:                                     --output (default: "NA")
+
+
+data:     --restrict-filenames            Restrict filenames to only ASCII characters,
+
+
+data:                                     and avoid "&" and spaces in filenames
+
+
+data:     --no-restrict-filenames         Allow Unicode characters, "&" and spaces in
+
+
+data:                                     filenames (default)
+
+
+data:     --windows-filenames             Force filenames to be Windows-compatible
+
+
+data:     --no-windows-filenames          Sanitize filenames only minimally
+
+
+data:     --trim-filenames LENGTH         Limit the filename length (excluding
+
+
+data:                                     extension) to the specified number of
+
+
+data:                                     characters
+
+
+data:     -w, --no-overwrites             Do not overwrite any files
+
+
+data:     --force-overwrites              Overwrite all video and metadata files. This
+
+
+data:                                     option includes --no-continue
+
+
+data:     --no-force-overwrites           Do not overwrite the video, but overwrite
+
+
+data:                                     related files (default)
+
+
+data:     -c, --continue                  Resume partially downloaded files/fragments
+
+
+data:                                     (default)
+
+
+data:     --no-continue                   Do not resume partially downloaded
+
+
+data:                                     fragments. If the file is not fragmented,
+
+
+data:                                     restart download of the entire file
+
+
+data:     --part                          Use .part files instead of writing directly
+
+
+data:                                     into output file (default)
+
+
+data:     --no-part                       Do not use .part files - write directly into
+
+
+data:                                     output file
+
+
+data:     --mtime                         Use the Last-modified header to set the file
+
+
+data:                                     modification time
+
+
+data:     --no-mtime                      Do not use the Last-modified header to set
+
+
+data:                                     the file modification time (default)
+
+
+data:     --write-description             Write video description to a .description
+
+
+data:                                     file
+
+
+data:     --no-write-description          Do not write video description (default)
+
+
+data:     --write-info-json               Write video metadata to a .info.json file
+
+
+data:                                     (this may contain personal information)
+
+
+data:     --no-write-info-json            Do not write video metadata (default)
+
+
+data:     --write-playlist-metafiles      Write playlist metadata in addition to the
+
+
+data:                                     video metadata when using --write-info-json,
+
+
+data:                                     --write-description etc. (default)
+
+
+data:     --no-write-playlist-metafiles   Do not write playlist metadata when using
+
+
+data:                                     --write-info-json, --write-description etc.
+
+
+data:     --clean-info-json               Remove some internal metadata such as
+
+
+data:                                     filenames from the infojson (default)
+
+
+data:     --no-clean-info-json            Write all fields to the infojson
+
+
+data:     --write-comments                Retrieve video comments to be placed in the
+
+
+data:                                     infojson. The comments are fetched even
+
+
+data:                                     without this option if the extraction is
+
+
+data:                                     known to be quick (Alias: --get-comments)
+
+
+data:     --no-write-comments             Do not retrieve video comments unless the
+
+
+data:                                     extraction is known to be quick (Alias:
+
+
+data:                                     --no-get-comments)
+
+
+data:     --load-info-json FILE           JSON file containing the video information
+
+
+data:                                     (created with the "--write-info-json"
+
+
+data:                                     option)
+
+
+data:     --cookies FILE                  Netscape formatted file to read cookies from
+
+
+data:                                     and dump cookie jar in
+
+
+data:     --no-cookies                    Do not read/dump cookies from/to file
+
+
+data:                                     (default)
+
+
+data:     --cookies-from-browser BROWSER[+KEYRING][:PROFILE][::CONTAINER]
+
+
+data:                                     The name of the browser to load cookies
+
+
+data:                                     from. Currently supported browsers are:
+
+
+data:                                     brave, chrome, chromium, edge, firefox,
+
+
+data:                                     opera, safari, vivaldi, whale. Optionally,
+
+
+data:                                     the KEYRING used for decrypting Chromium
+
+
+data:                                     cookies on Linux, the name/path of the
+
+
+data:                                     PROFILE to load cookies from, and the
+
+
+data:                                     CONTAINER name (if Firefox) ("none" for no
+
+
+data:                                     container) can be given with their
+
+
+data:                                     respective separators. By default, all
+
+
+data:                                     containers of the most recently accessed
+
+
+data:                                     profile are used. Currently supported
+
+
+data:                                     keyrings are: basictext, gnomekeyring,
+
+
+data:                                     kwallet, kwallet5, kwallet6
+
+
+data:     --no-cookies-from-browser       Do not load cookies from browser (default)
+
+
+data:     --cache-dir DIR                 Location in the filesystem where yt-dlp can
+
+
+data:                                     store some downloaded information (such as
+
+
+data:                                     client ids and signatures) permanently. By
+
+
+data:                                     default ${XDG_CACHE_HOME}/yt-dlp
+
+
+data:     --no-cache-dir                  Disable filesystem caching
+
+
+data:     --rm-cache-dir                  Delete all filesystem cache files
+
+
+data: 
+
+
+data:   Thumbnail Options:
+
+
+data:     --write-thumbnail               Write thumbnail image to disk
+
+
+data:     --no-write-thumbnail            Do not write thumbnail image to disk
+
+
+data:                                     (default)
+
+
+data:     --write-all-thumbnails          Write all thumbnail image formats to disk
+
+
+data:     --list-thumbnails               List available thumbnails of each video.
+
+
+data:                                     Simulate unless --no-simulate is used
+
+
+data: 
+
+
+data:   Internet Shortcut Options:
+
+
+data:     --write-link                    Write an internet shortcut file, depending
+
+
+data:                                     on the current platform (.url, .webloc or
+
+
+data:                                     .desktop). The URL may be cached by the OS
+
+
+data:     --write-url-link                Write a .url Windows internet shortcut. The
+
+
+data:                                     OS caches the URL based on the file path
+
+
+data:     --write-webloc-link             Write a .webloc macOS internet shortcut
+
+
+data:     --write-desktop-link            Write a .desktop Linux internet shortcut
+
+
+data: 
+
+
+data:   Verbosity and Simulation Options:
+
+
+data:     -q, --quiet                     Activate quiet mode. If used with --verbose,
+
+
+data:                                     print the log to stderr
+
+
+data:     --no-quiet                      Deactivate quiet mode. (Default)
+
+
+data:     --no-warnings                   Ignore warnings
+
+
+data:     -s, --simulate                  Do not download the video and do not write
+
+
+data:                                     anything to disk
+
+
+data:     --no-simulate                   Download the video even if printing/listing
+
+
+data:                                     options are used
+
+
+data:     --ignore-no-formats-error       Ignore "No video formats" error. Useful for
+
+
+data:                                     extracting metadata even if the videos are
+
+
+data:                                     not actually available for download
+
+
+data:                                     (experimental)
+
+
+data:     --no-ignore-no-formats-error    Throw error when no downloadable video
+
+
+data:                                     formats are found (default)
+
+
+data:     --skip-download                 Do not download the video but write all
+
+
+data:                                     related files (Alias: --no-download)
+
+
+data:     -O, --print [WHEN:]TEMPLATE     Field name or output template to print to
+
+
+data:                                     screen, optionally prefixed with when to
+
+
+data:                                     print it, separated by a ":". Supported
+
+
+data:                                     values of "WHEN" are the same as that of
+
+
+data:                                     --use-postprocessor (default: video).
+
+
+data:                                     Implies --quiet. Implies --simulate unless
+
+
+data:                                     --no-simulate or later stages of WHEN are
+
+
+data:                                     used. This option can be used multiple times
+
+
+data:     --print-to-file [WHEN:]TEMPLATE FILE
+
+
+data:                                     Append given template to the file. The
+
+
+data:                                     values of WHEN and TEMPLATE are the same as
+
+
+data:                                     that of --print. FILE uses the same syntax
+
+
+data:                                     as the output template. This option can be
+
+
+data:                                     used multiple times
+
+
+data:     -j, --dump-json                 Quiet, but print JSON information for each
+
+
+data:                                     video. Simulate unless --no-simulate is
+
+
+data:                                     used. See "OUTPUT TEMPLATE" for a
+
+
+data:                                     description of available keys
+
+
+data:     -J, --dump-single-json          Quiet, but print JSON information for each
+
+
+data:                                     URL or infojson passed. Simulate unless
+
+
+data:                                     --no-simulate is used. If the URL refers to
+
+
+data:                                     a playlist, the whole playlist information
+
+
+data:                                     is dumped in a single line
+
+
+data:     --force-write-archive           Force download archive entries to be written
+
+
+data:                                     as far as no errors occur, even if -s or
+
+
+data:                                     another simulation option is used (Alias:
+
+
+data:                                     --force-download-archive)
+
+
+data:     --newline                       Output progress bar as new lines
+
+
+data:     --no-progress                   Do not print progress bar
+
+
+data:     --progress                      Show progress bar, even if in quiet mode
+
+
+data:     --console-title                 Display progress in console titlebar
+
+
+data:     --progress-template [TYPES:]TEMPLATE
+
+
+data:                                     Template for progress outputs, optionally
+
+
+data:                                     prefixed with one of "download:" (default),
+
+
+data:                                     "download-title:" (the console title),
+
+
+data:                                     "postprocess:",  or "postprocess-title:".
+
+
+data:                                     The video's fields are accessible under the
+
+
+data:                                     "info" key and the progress attributes are
+
+
+data:                                     accessible under "progress" key. E.g.
+
+
+data:                                     --console-title --progress-template
+
+
+data:                                     "download-
+
+
+data:                                     title:%(info.id)s-%(progress.eta)s"
+
+
+data:     --progress-delta SECONDS        Time between progress output (default: 0)
+
+
+data:     -v, --verbose                   Print various debugging information
+
+
+data:     --dump-pages                    Print downloaded pages encoded using base64
+
+
+data:                                     to debug problems (very verbose)
+
+
+data:     --write-pages                   Write downloaded intermediary pages to files
+
+
+data:                                     in the current directory to debug problems
+
+
+data:     --print-traffic                 Display sent and read HTTP traffic
+
+
+data: 
+
+
+data:   Workarounds:
+
+
+data:     --encoding ENCODING             Force the specified encoding (experimental)
+
+
+data:     --legacy-server-connect         Explicitly allow HTTPS connection to servers
+
+
+data:                                     that do not support RFC 5746 secure
+
+
+data:                                     renegotiation
+
+
+data:     --no-check-certificates         Suppress HTTPS certificate validation
+
+
+data:     --prefer-insecure               Use an unencrypted connection to retrieve
+
+
+data:                                     information about the video (Currently
+
+
+data:                                     supported only for YouTube)
+
+
+data:     --add-headers FIELD:VALUE       Specify a custom HTTP header and its value,
+
+
+data:                                     separated by a colon ":". You can use this
+
+
+data:                                     option multiple times
+
+
+data:     --bidi-workaround               Work around terminals that lack
+
+
+data:                                     bidirectional text support. Requires bidiv
+
+
+data:                                     or fribidi executable in PATH
+
+
+data:     --sleep-requests SECONDS        Number of seconds to sleep between requests
+
+
+data:                                     during data extraction
+
+
+data:     --sleep-interval SECONDS        Number of seconds to sleep before each
+
+
+data:                                     download. This is the minimum time to sleep
+
+
+data:                                     when used along with --max-sleep-interval
+
+
+data:                                     (Alias: --min-sleep-interval)
+
+
+data:     --max-sleep-interval SECONDS    Maximum number of seconds to sleep. Can only
+
+
+data:                                     be used along with --min-sleep-interval
+
+
+data:     --sleep-subtitles SECONDS       Number of seconds to sleep before each
+
+
+data:                                     subtitle download
+
+
+data: 
+
+
+data:   Video Format Options:
+
+
+data:     -f, --format FORMAT             Video format code, see "FORMAT SELECTION"
+
+
+data:                                     for more details
+
+
+data:     -S, --format-sort SORTORDER     Sort the formats by the fields given, see
+
+
+data:                                     "Sorting Formats" for more details
+
+
+data:     --format-sort-force             Force user specified sort order to have
+
+
+data:                                     precedence over all fields, see "Sorting
+
+
+data:                                     Formats" for more details (Alias: --S-force)
+
+
+data:     --no-format-sort-force          Some fields have precedence over the user
+
+
+data:                                     specified sort order (default)
+
+
+data:     --video-multistreams            Allow multiple video streams to be merged
+
+
+data:                                     into a single file
+
+
+data:     --no-video-multistreams         Only one video stream is downloaded for each
+
+
+data:                                     output file (default)
+
+
+data:     --audio-multistreams            Allow multiple audio streams to be merged
+
+
+data:                                     into a single file
+
+
+data:     --no-audio-multistreams         Only one audio stream is downloaded for each
+
+
+data:                                     output file (default)
+
+
+data:     --prefer-free-formats           Prefer video formats with free containers
+
+
+data:                                     over non-free ones of the same quality. Use
+
+
+data:                                     with "-S ext" to strictly prefer free
+
+
+data:                                     containers irrespective of quality
+
+
+data:     --no-prefer-free-formats        Don't give any special preference to free
+
+
+data:                                     containers (default)
+
+
+data:     --check-formats                 Make sure formats are selected only from
+
+
+data:                                     those that are actually downloadable
+
+
+data:     --check-all-formats             Check all formats for whether they are
+
+
+data:                                     actually downloadable
+
+
+data:     --no-check-formats              Do not check that the formats are actually
+
+
+data:                                     downloadable
+
+
+data:     -F, --list-formats              List available formats of each video.
+
+
+data:                                     Simulate unless --no-simulate is used
+
+
+data:     --merge-output-format FORMAT    Containers that may be used when merging
+
+
+data:                                     formats, separated by "/", e.g. "mp4/mkv".
+
+
+data:                                     Ignored if no merge is required. (currently
+
+
+data:                                     supported: avi, flv, mkv, mov, mp4, webm)
+
+
+data: 
+
+
+data:   Subtitle Options:
+
+
+data:     --write-subs                    Write subtitle file
+
+
+data:     --no-write-subs                 Do not write subtitle file (default)
+
+
+data:     --write-auto-subs               Write automatically generated subtitle file
+
+
+data:                                     (Alias: --write-automatic-subs)
+
+
+data:     --no-write-auto-subs            Do not write auto-generated subtitles
+
+
+data:                                     (default) (Alias: --no-write-automatic-subs)
+
+
+data:     --list-subs                     List available subtitles of each video.
+
+
+data:                                     Simulate unless --no-simulate is used
+
+
+data:     --sub-format FORMAT             Subtitle format; accepts formats preference
+
+
+data:                                     separated by "/", e.g. "srt" or
+
+
+data:                                     "ass/srt/best"
+
+
+data:     --sub-langs LANGS               Languages of the subtitles to download (can
+
+
+data:                                     be regex) or "all" separated by commas, e.g.
+
+
+data:                                     --sub-langs "en.*,ja" (where "en.*" is a
+
+
+data:                                     regex pattern that matches "en" followed by
+
+
+data:                                     0 or more of any character). You can prefix
+
+
+data:                                     the language code with a "-" to exclude it
+
+
+data:                                     from the requested languages, e.g. --sub-
+
+
+data:                                     langs all,-live_chat. Use --list-subs for a
+
+
+data:                                     list of available language tags
+
+
+data: 
+
+
+data:   Authentication Options:
+
+
+data:     -u, --username USERNAME         Login with this account ID
+
+
+data:     -p, --password PASSWORD         Account password. If this option is left
+
+
+data:                                     out, yt-dlp will ask interactively
+
+
+data:     -2, --twofactor TWOFACTOR       Two-factor authentication code
+
+
+data:     -n, --netrc                     Use .netrc authentication data
+
+
+data:     --netrc-location PATH           Location of .netrc authentication data;
+
+
+data:                                     either the path or its containing directory.
+
+
+data:                                     Defaults to ~/.netrc
+
+
+data:     --netrc-cmd NETRC_CMD           Command to execute to get the credentials
+
+
+data:                                     for an extractor.
+
+
+data:     --video-password PASSWORD       Video-specific password
+
+
+data:     --ap-mso MSO                    Adobe Pass multiple-system operator (TV
+
+
+data:                                     provider) identifier, use --ap-list-mso for
+
+
+data:                                     a list of available MSOs
+
+
+data:     --ap-username USERNAME          Multiple-system operator account login
+
+
+data:     --ap-password PASSWORD          Multiple-system operator account password.
+
+
+data:                                     If this option is left out, yt-dlp will ask
+
+
+data:                                     interactively
+
+
+data:     --ap-list-mso                   List all supported multiple-system operators
+
+
+data:     --client-certificate CERTFILE   Path to client certificate file in PEM
+
+
+data:                                     format. May include the private key
+
+
+data:     --client-certificate-key KEYFILE
+
+
+data:                                     Path to private key file for client
+
+
+data:                                     certificate
+
+
+data:     --client-certificate-password PASSWORD
+
+
+data:                                     Password for client certificate private key,
+
+
+data:                                     if encrypted. If not provided, and the key
+
+
+data:                                     is encrypted, yt-dlp will ask interactively
+
+
+data: 
+
+
+data:   Post-Processing Options:
+
+
+data:     -x, --extract-audio             Convert video files to audio-only files
+
+
+data:                                     (requires ffmpeg and ffprobe)
+
+
+data:     --audio-format FORMAT           Format to convert the audio to when -x is
+
+
+data:                                     used. (currently supported: best (default),
+
+
+data:                                     aac, alac, flac, m4a, mp3, opus, vorbis,
+
+
+data:                                     wav). You can specify multiple rules using
+
+
+data:                                     similar syntax as --remux-video
+
+
+data:     --audio-quality QUALITY         Specify ffmpeg audio quality to use when
+
+
+data:                                     converting the audio with -x. Insert a value
+
+
+data:                                     between 0 (best) and 10 (worst) for VBR or a
+
+
+data:                                     specific bitrate like 128K (default 5)
+
+
+data:     --remux-video FORMAT            Remux the video into another container if
+
+
+data:                                     necessary (currently supported: avi, flv,
+
+
+data:                                     gif, mkv, mov, mp4, webm, aac, aiff, alac,
+
+
+data:                                     flac, m4a, mka, mp3, ogg, opus, vorbis,
+
+
+data:                                     wav). If the target container does not
+
+
+data:                                     support the video/audio codec, remuxing will
+
+
+data:                                     fail. You can specify multiple rules; e.g.
+
+
+data:                                     "aac>m4a/mov>mp4/mkv" will remux aac to m4a,
+
+
+data:                                     mov to mp4 and anything else to mkv
+
+
+data:     --recode-video FORMAT           Re-encode the video into another format if
+
+
+data:                                     necessary. The syntax and supported formats
+
+
+data:                                     are the same as --remux-video
+
+
+data:     --postprocessor-args NAME:ARGS  Give these arguments to the postprocessors.
+
+
+data:                                     Specify the postprocessor/executable name
+
+
+data:                                     and the arguments separated by a colon ":"
+
+
+data:                                     to give the argument to the specified
+
+
+data:                                     postprocessor/executable. Supported PP are:
+
+
+data:                                     Merger, ModifyChapters, SplitChapters,
+
+
+data:                                     ExtractAudio, VideoRemuxer, VideoConvertor,
+
+
+data:                                     Metadata, EmbedSubtitle, EmbedThumbnail,
+
+
+data:                                     SubtitlesConvertor, ThumbnailsConvertor,
+
+
+data:                                     FixupStretched, FixupM4a, FixupM3u8,
+
+
+data:                                     FixupTimestamp and FixupDuration. The
+
+
+data:                                     supported executables are: AtomicParsley,
+
+
+data:                                     FFmpeg and FFprobe. You can also specify
+
+
+data:                                     "PP+EXE:ARGS" to give the arguments to the
+
+
+data:                                     specified executable only when being used by
+
+
+data:                                     the specified postprocessor. Additionally,
+
+
+data:                                     for ffmpeg/ffprobe, "_i"/"_o" can be
+
+
+data:                                     appended to the prefix optionally followed
+
+
+data:                                     by a number to pass the argument before the
+
+
+data:                                     specified input/output file, e.g. --ppa
+
+
+data:                                     "Merger+ffmpeg_i1:-v quiet". You can use
+
+
+data:                                     this option multiple times to give different
+
+
+data:                                     arguments to different postprocessors.
+
+
+data:                                     (Alias: --ppa)
+
+
+data:     -k, --keep-video                Keep the intermediate video file on disk
+
+
+data:                                     after post-processing
+
+
+data:     --no-keep-video                 Delete the intermediate video file after
+
+
+data:                                     post-processing (default)
+
+
+data:     --post-overwrites               Overwrite post-processed files (default)
+
+
+data:     --no-post-overwrites            Do not overwrite post-processed files
+
+
+data:     --embed-subs                    Embed subtitles in the video (only for mp4,
+
+
+data:                                     webm and mkv videos)
+
+
+data:     --no-embed-subs                 Do not embed subtitles (default)
+
+
+data:     --embed-thumbnail               Embed thumbnail in the video as cover art
+
+
+data:     --no-embed-thumbnail            Do not embed thumbnail (default)
+
+
+data:     --embed-metadata                Embed metadata to the video file. Also
+
+
+data:                                     embeds chapters/infojson if present unless
+
+
+data:                                     --no-embed-chapters/--no-embed-info-json are
+
+
+data:                                     used (Alias: --add-metadata)
+
+
+data:     --no-embed-metadata             Do not add metadata to file (default)
+
+
+data:                                     (Alias: --no-add-metadata)
+
+
+data:     --embed-chapters                Add chapter markers to the video file
+
+
+data:                                     (Alias: --add-chapters)
+
+
+data:     --no-embed-chapters             Do not add chapter markers (default) (Alias:
+
+
+data:                                     --no-add-chapters)
+
+
+data:     --embed-info-json               Embed the infojson as an attachment to
+
+
+data:                                     mkv/mka video files
+
+
+data:     --no-embed-info-json            Do not embed the infojson as an attachment
+
+
+data:                                     to the video file
+
+
+data:     --parse-metadata [WHEN:]FROM:TO
+
+
+data:                                     Parse additional metadata like title/artist
+
+
+data:                                     from other fields; see "MODIFYING METADATA"
+
+
+data:                                     for details. Supported values of "WHEN" are
+
+
+data:                                     the same as that of --use-postprocessor
+
+
+data:                                     (default: pre_process)
+
+
+data:     --replace-in-metadata [WHEN:]FIELDS REGEX REPLACE
+
+
+data:                                     Replace text in a metadata field using the
+
+
+data:                                     given regex. This option can be used
+
+
+data:                                     multiple times. Supported values of "WHEN"
+
+
+data:                                     are the same as that of --use-postprocessor
+
+
+data:                                     (default: pre_process)
+
+
+data:     --xattrs                        Write metadata to the video file's xattrs
+
+
+data:                                     (using Dublin Core and XDG standards)
+
+
+data:     --concat-playlist POLICY        Concatenate videos in a playlist. One of
+
+
+data:                                     "never", "always", or "multi_video"
+
+
+data:                                     (default; only when the videos form a single
+
+
+data:                                     show). All the video files must have the
+
+
+data:                                     same codecs and number of streams to be
+
+
+data:                                     concatenable. The "pl_video:" prefix can be
+
+
+data:                                     used with "--paths" and "--output" to set
+
+
+data:                                     the output filename for the concatenated
+
+
+data:                                     files. See "OUTPUT TEMPLATE" for details
+
+
+data:     --fixup POLICY                  Automatically correct known faults of the
+
+
+data:                                     file. One of never (do nothing), warn (only
+
+
+data:                                     emit a warning), detect_or_warn (the
+
+
+data:                                     default; fix the file if we can, warn
+
+
+data:                                     otherwise), force (try fixing even if the
+
+
+data:                                     file already exists)
+
+
+data:     --ffmpeg-location PATH          Location of the ffmpeg binary; either the
+
+
+data:                                     path to the binary or its containing
+
+
+data:                                     directory
+
+
+data:     --exec [WHEN:]CMD               Execute a command, optionally prefixed with
+
+
+data:                                     when to execute it, separated by a ":".
+
+
+data:                                     Supported values of "WHEN" are the same as
+
+
+data:                                     that of --use-postprocessor (default:
+
+
+data:                                     after_move). The same syntax as the output
+
+
+data:                                     template can be used to pass any field as
+
+
+data:                                     arguments to the command. If no fields are
+
+
+data:                                     passed, %(filepath,_filename|)q is appended
+
+
+data:                                     to the end of the command. This option can
+
+
+data:                                     be used multiple times
+
+
+data:     --no-exec                       Remove any previously defined --exec
+
+
+data:     --convert-subs FORMAT           Convert the subtitles to another format
+
+
+data:                                     (currently supported: ass, lrc, srt, vtt).
+
+
+data:                                     Use "--convert-subs none" to disable
+
+
+data:                                     conversion (default) (Alias: --convert-
+
+
+data:                                     subtitles)
+
+
+data:     --convert-thumbnails FORMAT     Convert the thumbnails to another format
+
+
+data:                                     (currently supported: jpg, png, webp). You
+
+
+data:                                     can specify multiple rules using similar
+
+
+data:                                     syntax as "--remux-video". Use "--convert-
+
+
+data:                                     thumbnails none" to disable conversion
+
+
+data:                                     (default)
+
+
+data:     --split-chapters                Split video into multiple files based on
+
+
+data:                                     internal chapters. The "chapter:" prefix can
+
+
+data:                                     be used with "--paths" and "--output" to set
+
+
+data:                                     the output filename for the split files. See
+
+
+data:                                     "OUTPUT TEMPLATE" for details
+
+
+data:     --no-split-chapters             Do not split video based on chapters
+
+
+data:                                     (default)
+
+
+data:     --remove-chapters REGEX         Remove chapters whose title matches the
+
+
+data:                                     given regular expression. The syntax is the
+
+
+data:                                     same as --download-sections. This option can
+
+
+data:                                     be used multiple times
+
+
+data:     --no-remove-chapters            Do not remove any chapters from the file
+
+
+data:                                     (default)
+
+
+data:     --force-keyframes-at-cuts       Force keyframes at cuts when
+
+
+data:                                     downloading/splitting/removing sections.
+
+
+data:                                     This is slow due to needing a re-encode, but
+
+
+data:                                     the resulting video may have fewer artifacts
+
+
+data:                                     around the cuts
+
+
+data:     --no-force-keyframes-at-cuts    Do not force keyframes around the chapters
+
+
+data:                                     when cutting/splitting (default)
+
+
+data:     --use-postprocessor NAME[:ARGS]
+
+
+data:                                     The (case-sensitive) name of plugin
+
+
+data:                                     postprocessors to be enabled, and
+
+
+data:                                     (optionally) arguments to be passed to it,
+
+
+data:                                     separated by a colon ":". ARGS are a
+
+
+data:                                     semicolon ";" delimited list of NAME=VALUE.
+
+
+data:                                     The "when" argument determines when the
+
+
+data:                                     postprocessor is invoked. It can be one of
+
+
+data:                                     "pre_process" (after video extraction),
+
+
+data:                                     "after_filter" (after video passes filter),
+
+
+data:                                     "video" (after --format; before
+
+
+data:                                     --print/--output), "before_dl" (before each
+
+
+data:                                     video download), "post_process" (after each
+
+
+data:                                     video download; default), "after_move"
+
+
+data:                                     (after moving the video file to its final
+
+
+data:                                     location), "after_video" (after downloading
+
+
+data:                                     and processing all formats of a video), or
+
+
+data:                                     "playlist" (at end of playlist). This option
+
+
+data:                                     can be used multiple times to add different
+
+
+data:                                     postprocessors
+
+
+data: 
+
+
+data:   SponsorBlock Options:
+
+
+data:     Make chapter entries for, or remove various segments (sponsor,
+
+
+data:     introductions, etc.) from downloaded YouTube videos using the
+
+
+data:     SponsorBlock API (https://sponsor.ajay.app)
+
+
+data: 
+
+
+data:     --sponsorblock-mark CATS        SponsorBlock categories to create chapters
+
+
+data:                                     for, separated by commas. Available
+
+
+data:                                     categories are sponsor, intro, outro,
+
+
+data:                                     selfpromo, preview, filler, interaction,
+
+
+data:                                     music_offtopic, poi_highlight, chapter, all
+
+
+data:                                     and default (=all). You can prefix the
+
+
+data:                                     category with a "-" to exclude it. See [1]
+
+
+data:                                     for descriptions of the categories. E.g.
+
+
+data:                                     --sponsorblock-mark all,-preview [1] https:/
+
+
+data:                                     /wiki.sponsor.ajay.app/w/Segment_Categories
+
+
+data:     --sponsorblock-remove CATS      SponsorBlock categories to be removed from
+
+
+data:                                     the video file, separated by commas. If a
+
+
+data:                                     category is present in both mark and remove,
+
+
+data:                                     remove takes precedence. The syntax and
+
+
+data:                                     available categories are the same as for
+
+
+data:                                     --sponsorblock-mark except that "default"
+
+
+data:                                     refers to "all,-filler" and poi_highlight,
+
+
+data:                                     chapter are not available
+
+
+data:     --sponsorblock-chapter-title TEMPLATE
+
+
+data:                                     An output template for the title of the
+
+
+data:                                     SponsorBlock chapters created by
+
+
+data:                                     --sponsorblock-mark. The only available
+
+
+data:                                     fields are start_time, end_time, category,
+
+
+data:                                     categories, name, category_names. Defaults
+
+
+data:                                     to "[SponsorBlock]: %(category_names)l"
+
+
+data:     --no-sponsorblock               Disable both --sponsorblock-mark and
+
+
+data:                                     --sponsorblock-remove
+
+
+data:     --sponsorblock-api URL          SponsorBlock API location, defaults to
+
+
+data:                                     https://sponsor.ajay.app
+
+
+data: 
+
+
+data:   Extractor Options:
+
+
+data:     --extractor-retries RETRIES     Number of retries for known extractor errors
+
+
+data:                                     (default is 3), or "infinite"
+
+
+data:     --allow-dynamic-mpd             Process dynamic DASH manifests (default)
+
+
+data:                                     (Alias: --no-ignore-dynamic-mpd)
+
+
+data:     --ignore-dynamic-mpd            Do not process dynamic DASH manifests
+
+
+data:                                     (Alias: --no-allow-dynamic-mpd)
+
+
+data:     --hls-split-discontinuity       Split HLS playlists to different formats at
+
+
+data:                                     discontinuities such as ad breaks
+
+
+data:     --no-hls-split-discontinuity    Do not split HLS playlists into different
+
+
+data:                                     formats at discontinuities such as ad breaks
+
+
+data:                                     (default)
+
+
+data:     --extractor-args IE_KEY:ARGS    Pass ARGS arguments to the IE_KEY extractor.
+
+
+data:                                     See "EXTRACTOR ARGUMENTS" for details. You
+
+
+data:                                     can use this option multiple times to give
+
+
+data:                                     arguments for different extractors
+
+
+data: 
+
+
+data:   Preset Aliases:
+
+
+data:     Predefined aliases for convenience and ease of use. Note that future
+
+
+data:     versions of yt-dlp may add or adjust presets, but the existing preset
+
+
+data:     names will not be changed or removed
+
+
+data: 
+
+
+data:     -t mp3                          -f 'ba[acodec^=mp3]/ba/b' -x --audio-format
+
+
+data:                                     mp3
+
+
+data: 
+
+
+data:     -t aac                          -f
+
+
+data:                                     'ba[acodec^=aac]/ba[acodec^=mp4a.40.]/ba/b'
+
+
+data:                                     -x --audio-format aac
+
+
+data: 
+
+
+data:     -t mp4                          --merge-output-format mp4 --remux-video mp4
+
+
+data:                                     -S vcodec:h264,lang,quality,res,fps,hdr:12,a
+
+
+data:                                     codec:aac
+
+
+data: 
+
+
+data:     -t mkv                          --merge-output-format mkv --remux-video mkv
+
+
+data: 
+
+
+data:     -t sleep                        --sleep-subtitles 5 --sleep-requests 0.75
+
+
+data:                                     --sleep-interval 10 --max-sleep-interval 20
+
+
+data: 
+
+
+data: See full documentation at  https://github.com/yt-dlp/yt-dlp#readme
+
+
+data: Command execution completed
+
+event: close
+data: {}
+

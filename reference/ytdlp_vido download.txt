@@ -1,0 +1,119 @@
+"https://ytdlp.online/stream?command=yt-dlp%20-f%20bv*+ba/best%20--merge-output-format%20mp4%20https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFAyKDaXEAgc" > output.txt
+
+data: <font color="orange"><strong>ÔÜá´©Å Warning: Invalid or Unsafe command options detected. Some parameters were skipped.</strong></font>
+
+data: <font color="red">Running command: -f 'bv*' --merge-output-format mp4 'https://www.youtube.com/watch?v=FAyKDaXEAgc' -o 'download/%(title)s.%(ext)s'</font>
+
+data: [youtube] Extracting URL: https://www.youtube.com/watch?v=FAyKDaXEAgc
+
+
+data: [youtube] FAyKDaXEAgc: Downloading webpage
+
+
+data: [youtube] FAyKDaXEAgc: Downloading android sdkless player API JSON
+
+
+data: [youtube] FAyKDaXEAgc: Downloading tv client config
+
+
+data: [youtube] FAyKDaXEAgc: Downloading tv player API JSON
+
+
+data: [youtube] FAyKDaXEAgc: Downloading web safari player API JSON
+
+
+data: [youtube] FAyKDaXEAgc: Downloading player 50cc0679-main
+
+
+data: WARNING: [youtube] Falling back to generic n function search
+
+
+data:          player = https://www.youtube.com/s/player/50cc0679/player_ias.vflset/en_US/base.js
+
+
+data: WARNING: [youtube] FAyKDaXEAgc: nsig extraction failed: Some formats may be missing
+
+
+data:          n = lbsZOFY-qGH7v3Yqmn ; player = https://www.youtube.com/s/player/50cc0679/player_ias.vflset/en_US/base.js
+
+
+data:          Please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+
+
+data: WARNING: [youtube] FAyKDaXEAgc: Some web_safari client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+
+
+data: WARNING: [youtube] FAyKDaXEAgc: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+
+
+data: [youtube] FAyKDaXEAgc: Downloading m3u8 information
+
+
+data: [info] FAyKDaXEAgc: Downloading 1 format(s): 401
+
+
+data: [download] Destination: download/here's a 10 second joke because you're busy.mp4
+
+
+data: 
+
+
+data: [download]   0.0% of    4.24MiB at   76.88KiB/s ETA 00:56
+
+
+data: [download]   0.1% of    4.24MiB at  218.58KiB/s ETA 00:19
+
+
+data: [download]   0.2% of    4.24MiB at  490.04KiB/s ETA 00:08
+
+
+data: [download]   0.3% of    4.24MiB at 1010.04KiB/s ETA 00:04
+
+
+data: [download]   0.7% of    4.24MiB at  970.95KiB/s ETA 00:04
+
+
+data: [download]   1.5% of    4.24MiB at 1000.02KiB/s ETA 00:04
+
+
+data: [download]   2.9% of    4.24MiB at    1.03MiB/s ETA 00:03
+
+
+data: [download]   5.9% of    4.24MiB at  688.37KiB/s ETA 00:05
+
+
+data: [download]  11.8% of    4.24MiB at  650.41KiB/s ETA 00:05
+
+
+data: [download]  23.6% of    4.24MiB at  632.44KiB/s ETA 00:05
+
+
+data: [download]  37.7% of    4.24MiB at  600.12KiB/s ETA 00:04
+
+
+data: [download]  50.5% of    4.24MiB at  562.12KiB/s ETA 00:03
+
+
+data: [download]  61.4% of    4.24MiB at  550.96KiB/s ETA 00:03
+
+
+data: [download]  73.0% of    4.24MiB at  518.62KiB/s ETA 00:02
+
+
+data: [download]  82.1% of    4.24MiB at  520.23KiB/s ETA 00:01
+
+
+data: [download]  94.4% of    4.24MiB at  505.87KiB/s ETA 00:00
+
+
+data: [download] 100.0% of    4.24MiB at  506.61KiB/s ETA 00:00
+
+
+data: [download] 100% of    4.24MiB in 00:00:11 at 393.73KiB/s 
+
+
+data: <br>Command execution completed <br><a href="/download/here%27s%20a%2010%20second%20joke%20because%20you%27re%20busy.mp4" target="_blank">Download File</a><br><br><a style="color: grey;" href="/download/" target="_blank">Open Folder</a> (auto clean every 1 hours)
+
+event: close
+data: {}
+
