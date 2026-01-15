@@ -1,5 +1,7 @@
 # ytdlp.online API Wrapper
 
+![ytdlp reference](reference/ytdlp.png)
+
 A FastAPI-based wrapper for the [ytdlp.online](https://ytdlp.online) service that provides a clean REST API interface for downloading videos using yt-dlp.
 
 ## Features
